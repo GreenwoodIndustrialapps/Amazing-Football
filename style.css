@@ -188,3 +188,8 @@ a.name { text-decoration: none; }
 .top nav a:active { transform: translateY(3px); box-shadow: 0 1px 0 #134c9a, 0 3px 5px rgba(0,0,0,.25); }
 @media (max-width: 520px) { .top nav { gap: 18px; } .top nav a { font-size: 17px; padding: 7px 22px 8px; } }
 @media (prefers-reduced-motion: reduce) { .top nav a { transition: none; } }
+
+/* phone: the steps stack, so each picture takes its own height (no fixed row, no gap above the keys or the ball) (Steve, 22:35) */
+@media (max-width: 720px) {
+  .step .pics { height: auto; align-items: center; }
+}
